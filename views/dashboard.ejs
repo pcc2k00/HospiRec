@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Hospital Search</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/simplex/bootstrap.min.css" integrity="sha384-FYrl2Nk72fpV6+l3Bymt1zZhnQFK75ipDqPXK0sOR0f/zeOSZ45/tKlsKucQyjSp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">HospiPharma</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor03">
+              <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/logout">Logout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/signup">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/history">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/recommendation">Recommendations</a>
+              </li>
+              </ul>
+            </div>
+          </nav>
+
+        <h2>Welcome <%= name %></h2>
+        <% if (messages.error) { %>
+          <p style="color:red"><%- messages.error %></p>
+          <% } %>
+          <% if (messages.success) { %>
+          <p style="color:green"><%- messages.success %></p>
+          <% } %>
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <td><a class="btn btn-primary btn-lg" href="/" role="button">Search</a></td>
+                    <!-- <td><a class="btn btn-primary btn-lg" href="/history" role="button">History</a></td> -->
+                    <td><a class="btn btn-primary btn-lg" href="/recommendation" role="button">Recommendation</a></td>
+                    <td><a class="btn btn-primary btn-lg" href="/map" role="button">Map</a></td>
+                    <td><a class="btn btn-primary btn-lg" href="/addHospital" role="button">Add Hospital</a></td>
+                    <td><a class="btn btn-primary btn-lg" href="/datacapture" role="button">Data Capture</a></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </body>
+
+</html>
