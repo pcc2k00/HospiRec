@@ -1,6 +1,6 @@
-# hospi-pharma : Hospital Recommendation System
-hospital finder based on user's current location and also helps in finding nearest hospital.
-user can aslo find based on his locality and also check the shortest route to the hospital
+# hospiRec : Hospital Recommendation System
+Hospital Finder and recommender.<br><br>
+User can find Hospitals based on his locality and check the shortest route to the hospital on map
 
 ## Usage
 ```
