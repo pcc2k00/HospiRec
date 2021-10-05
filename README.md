@@ -14,4 +14,4 @@ http://localhost:3000
 ## Tech Stack
 
 - nodejs
-- Templating Engine(ejs)
+- Templating Engine(ejs) :: EJS is a simple templating language that lets you generate HTML markup with plain JavaScript
