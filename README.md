@@ -5,8 +5,13 @@ User can find Hospitals based on his locality and check the shortest route to th
 ## Usage
 ```
 npm install
-node app.js
+npm start
 
-Go to 
-localhost:3000
+Access App from here:
+http://localhost:3000
 ```
+
+## Tech Stack
+
+- nodejs
+- Templating Engine(ejs)
